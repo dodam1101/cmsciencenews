@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+      *{
+        font-family: "Hahmlet", serif;
+      }
+      .nav {
+        height: 70px;
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right-items {
+        display: flex;
+        margin-left: auto;
+        font-size: 90%;
+        margin-right: 20px;
+      }
+      .nav-item {
+        margin-left: 10px;
+      }
+      .team-name {
+        margin-left: 20px;
+        font-size: 120%;
+      }
+      .title {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .subtitle {
+        text-align: right;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-top: 40px;
+      }
+      .contents {
+        margin-top: 60px;
+        margin-bottom: 100px;
+      }
+      .content {
+        margin-top: 25px;
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+      }
+      .contenttitle {
+        margin-top: 60px;
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+      .main {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="team-name">
+        청명고 프로젝트 봉사활동
+      </div>
+      <div class="nav-right-items">
+        <div class="nav-item">엄선아</div>
+        <div class="nav-item">강민교</div>
+        <div class="nav-item">배은서</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title">
+        NPU: 차세대 AI 반도체의 주역, 그 원리는?
+      </div>
+      <div class="subtitle">
+        20517 엄선아
+      </div>
+      <div class="contents">
+        <div class = "content">
+          최근 급속도로 이루어지는 인공지능(AI)의 발전과 함께, AI를 보다 효율적으로 구현하기 위한 하드웨어 기술도 급속히 발전하고 있다. 그 예로, 최근 반도체 회사들의 기사들을 보면 모두 AI 반도체를 개발하기 위해 서로 경쟁하며, 힘을 쓰고 있음을 알 수 있다. 그 중에서도 최근 주목받고 있는 기술은 바로 신경망 처리 장치(Neural Processing Unit, NPU)이다. 이는 이름을 통해 알 수 있듯 Neural Network 즉 인공신경망을 통해 인공지능 연산을 좀 더 효율적으로 하고자 하는 목적으로 설계되었다. 이때, NPU 뿐만 아니라 GPU(Graphics Processing Unit)도 많은 병렬 연산을 위해 만들어졌기 때문에 CPU 이후 인공지능 연산에 많이 쓰이고 있는데, NPU는 GPU와 작동 원리 측면에서 어떤 차이점을 보이기에 인공지능 연산을 더 효율적으로 만들어준다고 하는지 알아보도록 하자.
+        </div>
+        <a href="https://lh3.googleusercontent.com/proxy/BZU58XS7NGlt1pMPwCwKpkmXR_g1_x7asBOvTESK6j-FRm35-sunHsFgUWh1sVp5od68QKgZnjnRuTUJWJ6d_S8vWxPMT2ilspYBl3E" >
+          <img src="https://lh3.googleusercontent.com/proxy/BZU58XS7NGlt1pMPwCwKpkmXR_g1_x7asBOvTESK6j-FRm35-sunHsFgUWh1sVp5od68QKgZnjnRuTUJWJ6d_S8vWxPMT2ilspYBl3E" style="width: 100%; height: auto;">
+        </a>
+        <div class = "contenttitle">
+          NPU란 무엇인가?
+        </div>
+        <div class = "content">
+          NPU(Neural Processing Unit, 신경망처리장치)는 인공지능, 특히 딥러닝 모델의 처리에 특화된 반도체 칩이다. 따라서 빅데이터를 사람의 신경망처럼 빠르고 효율적으로 처리할 수 있다. 이러한 특징 때문에 인공지능(이하 AI) 연산에 주로 활용되는 반도체다. 설명은 다소 어렵게 들리지만, 이미 우리 생활에서 흔히 사용되고 있다. 스마트폰 카메라로 사진을 찍을 때 배경 안의 사물·환경·인물을 인식해 자동으로 초점을 조정하는 것, 음식 사진 촬영 시 카메라가 음식 모드로 자동 전환되는 것, 촬영된 결과물에서 불필요한 피사체만 지울 수 있는 것도 모두 NPU 덕분이라 할 수 있다. 과거 NPU를 활용하는 영역은 이미지 기반의 객체 검출 등 비교적 단순했다. 하지만 인공지능 시대로 접어들면서 최근에는 카메라 화질 개선, 음성 서비스 등 점차 더 많은 연산량을 필요로 하는 고성능 IP에 대한 시장 요구가 커지고 있다.
+        </div>
+        <div class = "contenttitle">
+          NPU, CPU GPU와 무엇이 다를까?
+        </div>
+        <div class = "content">
+          그렇다면 NPU는 CPU, GPU와 달리 어떤 차별점을 가지고 있길래 점점 각광을 받고 있는 것일까? GPU가 인공지능 개발에 사용되는 이유는 단순 연산을 처리하는 데 최적의 반도체라서다. 인공지능 개발은 기본적으로 많은 양의 단순 사칙 연산을 필요로 한다. CPU는 복잡한 단일 연산 처리에는 뛰어난 반면 다중 처리에는 비효율적이다. 반대로 GPU는 단순 연산을 다중으로 처리하는 데 적합한 구조라서 인공지능 개발에 쓰이는 것이다. GPU는 연산 처리의 최적화를 통해 대용량 데이터 처리가 필요한 다양한 산업군에서 범용성 있게 활용되며, 기술력도 생산성 모두 검증됐다는 장점이 있다. 하지만 GPU가 단순 연산 처리에 최적화된 구조인 까닭에 특정 인공지능 개발 환경에 부적합하다는 한계가 있고, 또 전력 소모량과 비용이 높다는 게 단점이다. 범용성과 성능은 좋으나, 투자 대비 효율이 떨어진다. 
+        </div>
+         <div class = "content">
+          그래서 등장한 게 인공지능 처리에 특화된 반도체, 신경 처리 장치(Neural Processing Unit, 이하 NPU)다. NPU는 GPU와 마찬가지로 병렬 처리에 최적화된 구조로 되어있으나, 인공지능을 개발하는데 필요한 제어 및 산술 논리 구성 요소를 갖춰 인공 신경망과 같은 예측 모델에서 기계 학습, 심화 학습 알고리즘을 실행하는데 최적화돼 있다. 덕분에 GPU와 동일한 인공지능 작업이 주어질 때, GPU 대비 전력 소모는 적고 더 많은 결과물을 산출한다. 그 예로 아래 사진을 보면 퓨리오사 AI의 워보이(NPU)는 동급 열설계 전력의 엔비디아 A2 텐서 코어 GPU와 비교해 특정 테스트에서 앞선 모습을 보여준다. (출처=퓨리오사 AI)
+
+        </div>
+        <a href="https://dimg.donga.com/wps/NEWS/IMAGE/2023/05/12/119260819.1.edit.jpg" >
+          <img src="https://dimg.donga.com/wps/NEWS/IMAGE/2023/05/12/119260819.1.edit.jpg" style="width: 100%; height: auto;">
+        </a>
+        <div class = "contenttitle">
+          NPU의 작동 원리
+        </div>
+        <div class = "content">
+          NPU(Neural Processing Unit)의 기본 원리는 데이터를 병렬로 처리할 수 있다는 것이다. 즉, 동시에 여러 계산을 수행할 수 있다. 이는 일반적으로 데이터를 순차적으로 처리하는 기존 프로세서와는 다르다. 병렬 처리는 많은 계산을 동시에 수행해야 하는 이미지 인식 또는 자연어 처리와 같은 작업에서 NPU를 매우 잘 수행하게 한다. 예를 들면 이미지 인식 아키텍처에는 CNN(Convolutional neural network)이 있다. 이미지나 영상 데이터를 처리할 때 쓰이는 딥러닝 신경망 아키텍처이다.
+        </div>
+        <div class = "content">
+          NPU의 주요 특징 중 하나는 시간이 지남에 따라 학습하고 적응하는 능력이다. 이것을 머신러(Machine Learning)이라고 한다. 기본적으로 NPU는 데이터를 분석하고 서로 다른 데이터 포인트 간의 패턴 또는 관계를 식별할 수 있다. 그런 다음 이러한 지식을 사용하여 새로운 데이터에 대한 예측 또는 결정을 내릴 수 있다. 이것은 우리의 뇌가 새로운 것을 경험하면서 시간이 지남에 따라 배우고 적응하는 방법과 비슷하다고 볼 수 있다.
+        </div>
+        <div class = "contenttitle">
+          NPU의 미래 전망
+        </div>
+        <div class = "content">
+          NPU와 GPU는 AI 기술의 발전과 함께 더욱 중요해질 것이다. 생성형 인공지능 용도로 GPU 수요가 증가하는 데다가, 다양한 분야에서 GPU를 필요로 하는 만큼 가격은 꾸준히 오를 수밖에 없을 것이다. 반대로 NPU는 인공지능 개발에 최적화된 설계를 갖추고 있으며, 동급의 GPU보다 처리 속도도 높고, 전력 소모대 성능비도 우수하다. 다목적이라는 이유로 수요가 몰려 가격이 오르는 GPU와 달리, 목적에 맞게 제품을 구매하면 되니 가격경쟁력도 충분하다. 물론 수십 년 간 개발되어 온 GPU와 다르게 이제 막 발돋움한 분야라 갈 길은 멀지만, 앞으로 많은 부분에서 GPU의 역할을 대신할 것이라는 의견은 우세하다.<br><br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

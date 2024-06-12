@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+      *{
+        font-family: "Hahmlet", serif;
+      }
+      .nav {
+        height: 70px;
+        border-bottom: 1px solid black;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-right-items {
+        display: flex;
+        margin-left: auto;
+        font-size: 90%;
+        margin-right: 20px;
+      }
+      .nav-item {
+        margin-left: 10px;
+      }
+      .team-name {
+        margin-left: 20px;
+        font-size: 120%;
+      }
+      .title {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: bold;
+      }
+      .subtitle {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 300;
+        margin-top: 20px;
+      }
+      .main {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 70px;
+      }
+      .news{
+        display: flex;
+      }
+      .news-item {
+        width: 50%;
+        height: 350px;
+        border: 1px solid black;
+        margin: 35px;
+        border-radius: 4px;
+        text-align: center;
+        margin-top: 50px;
+      }
+      .news-item-title {
+        font-size: 120%;
+        background: rgba(0, 0,0,.03);
+        text-align: center;
+        height: 53px;
+        line-height: 53px;
+        border-bottom: 2px solid black;
+      }
+      .news-item-subtitle {
+        margin-top: 30px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 20px;
+      }
+      .news-item-detail {
+        margin-top: 20px;
+      }
+      .news-item-button {
+        padding: .5rem 1rem;
+        font-size: 1.25rem;
+        line-height: 1.5;
+        border-radius: .3rem;
+        color: #007bff;
+        background-color: transparent;
+        background-image: none;
+        border-color: #007bff;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="team-name">
+        청명고 프로젝트 봉사활동
+      </div>
+      <div class="nav-right-items">
+        <div class="nav-item">엄선아</div>
+        <div class="nav-item">강민교</div>
+        <div class="nav-item">배은서</div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="title">
+        과학신문누리집
+      </div>
+      <div class="subtitle">
+        청명고 학생들에게 최신 과학 기술과 과학 지식에 대한 기사를 작성하여 공유함으로써<br>
+        친구들 과학적 호기심과 과학에 대한 친근함을 기르기 위한 사이트입니다~
+      </div>
+      <div class="news">
+        <div class="news-item">
+          <div class="news-item-title">
+            반도체
+          </div>
+          <div class="news-item-subtitle">
+            AI의 시대
+          </div>
+          <div class="news-item-detail">
+            - NPU: 차세대 AI 반도체의 주역, 그 원리는?
+          </div>
+          <button class="news-item-button" onClick="location.href='it.html'">
+            Click me
+          </button>
+        </div>
+        <div class="news-item">
+          <div class="news-item-title">
+            보건
+          </div>
+          <div class="news-item-subtitle">
+            우리 주변의 질환들
+          </div>
+          <div class="news-item-detail">
+            - 알레르기
+            질환이
+            유전..?<br><br>
+          </div>
+          <button class="news-item-button" onClick="location.href='health.html'">
+            Click me
+          </button>
+        </div>
+        <div class="news-item">
+          <div class="news-item-title">
+            화학
+          </div>
+          <div class="news-item-subtitle">
+            환경을 위한 화학
+          </div>
+          <div class="news-item-detail">
+            - 화이트 바이오: 지속 가능한 미래를 위한 혁신 기술
+          </div>
+          <button class="news-item-button" onClick="location.href='chemic.html'">
+            Click me
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
